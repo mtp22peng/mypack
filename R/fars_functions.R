@@ -95,7 +95,7 @@ fars_summarize_years <- function(years) {
 
 
 
-#' This is a function that plots the LONGITUD and LATITUDE of specified state on a map, whcih has to appear in the data frame specified by a ceetain year.(using the \code{state.num,year} argument).
+#' This is a function that plots the LONGITUD and LATITUDE of specified #'state on a map, whcih has to appear in the data frame specified by a #'ceetain year.(using the \code{state.num,year} argument).
 #'
 #'
 #' The function "filter" is imported from external package "dplyr".
@@ -112,7 +112,8 @@ fars_summarize_years <- function(years) {
 #'
 #' @param year A number giving the year
 #'
-#' @return This function plots the LONGITUD and LATITUDE of the selected states on a map.
+#' @return This function plots the LONGITUD and LATITUDE of the selected
+#' states on a map.
 #'
 #' @examples
 #' fars_map_state(25, 2015)
