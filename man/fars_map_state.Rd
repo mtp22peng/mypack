@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{This is a function that plots the LONGITUD and LATITUDE of specified state on a map, whcih has to appear in the data frame specified by a ceetain year.(using the \code{state.num,year} argument).}
+\title{This is a function that plots the LONGITUD and LATITUDE of specified #'state on a map, whcih has to appear in the data frame specified by a #'ceetain year.(using the \code{state.num,year} argument).}
 \usage{
 fars_map_state(state.num, year)
 }
@@ -18,7 +18,8 @@ message "no accidents to plot" and return a NULL object.}
 \item{year}{A number giving the year}
 }
 \value{
-This function plots the LONGITUD and LATITUDE of the selected states on a map.
+This function plots the LONGITUD and LATITUDE of the selected
+states on a map.
 }
 \description{
 The function "filter" is imported from external package "dplyr".
