@@ -1,1 +1,7 @@
 exportPattern("^[[:alpha:]]+")
+useDynLib(mypack)
+importFrom(Rcpp, sourceCpp)
+importFrom(dplyr, tbl_df)
+importFrom(dplyr, mutate_each_)
+importFrom(dplyr, data_frame)
+importFrom(data.table, setattr)
