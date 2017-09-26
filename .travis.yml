@@ -4,4 +4,9 @@ language: R
 sudo: false
 cache: packages
 
+
+r_packages:
+  - tidyverse
+  - dplyr
+  - maps
 warnings_are_errors: false
