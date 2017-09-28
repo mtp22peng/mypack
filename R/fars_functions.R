@@ -9,7 +9,9 @@
 #' @return This function returns a data frame
 #'
 #' @examples
-#' fars_read("data.csv")
+#' WD <- setwd(system.file("extdata", package = "mypack"))
+#' fars_read("accident_2013.csv.bz2")
+#' setwd(WD)
 #'
 #' @export
 fars_read <- function(filename) {
@@ -32,8 +34,10 @@ fars_read <- function(filename) {
 #' @return This function prints and returns a string file name
 #'
 #' @examples
-#' make_filename(2017)
 #'
+#' WD <- setwd(system.file("extdata", package = "mypack"))
+#' make_filename(2013)
+#' setwd(WD)
 #' @export
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -52,8 +56,11 @@ make_filename <- function(year) {
 #'    these two columns.
 #'
 #' @examples
-#'fars_read_years(list(2014, 2013, 2011))
 #'
+#' WD <- setwd(system.file("extdata", package = "mypack"))
+#' fars_read_years(2013)
+#' fars_read_years(c(2013, 2014))
+#' setwd(WD)
 #' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -82,8 +89,11 @@ fars_read_years <- function(years) {
 #' @return This function returns a summary with year and counts of each #'month appearances
 #'
 #' @examples
-#' fars_summarize_years(list(2014, 2013, 2011))
 #'
+#' WD <- setwd(system.file("extdata", package = "mypack"))
+#' fars_summarize_years(2013)
+#' fars_summarize_years(c(2013, 2014))
+#' setwd(WD)
 #' @export
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
