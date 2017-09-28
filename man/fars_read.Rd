@@ -17,6 +17,8 @@ The function "read_csv" is imported from external package "readr"
 The function "tbl_df" is imported from external package "dplyr"
 }
 \examples{
-fars_read("data.csv")
+WD <- setwd(system.file("extdata", package = "mypack"))
+fars_read("accident_2013.csv.bz2")
+setwd(WD)
 
 }

@@ -19,6 +19,9 @@ This is a function that selects files containing a specified list of #'years, an
 The function "mutate" and "select" is imported from external package #'"dplyr"
 }
 \examples{
-fars_read_years(list(2014, 2013, 2011))
 
+WD <- setwd(system.file("extdata", package = "mypack"))
+fars_read_years(2013)
+fars_read_years(c(2013, 2014))
+setwd(WD)
 }

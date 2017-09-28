@@ -26,6 +26,7 @@ The function "filter" is imported from external package "dplyr".
 The function "map" is imported from external package "maps".
 }
 \examples{
-fars_map_state(25, 2015)
-
+WD <- setwd(system.file("extdata", package = "mypack"))
+fars_map_state(12, 2015)
+setwd(WD)
 }

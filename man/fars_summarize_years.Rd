@@ -18,6 +18,9 @@ The function "spread" is imported from external package "tidyr".
 the piping operator "%>%" requires external package "magrittr".
 }
 \examples{
-fars_summarize_years(list(2014, 2013, 2011))
 
+WD <- setwd(system.file("extdata", package = "mypack"))
+fars_summarize_years(2013)
+fars_summarize_years(c(2013, 2014))
+setwd(WD)
 }

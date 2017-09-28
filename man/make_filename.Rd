@@ -18,6 +18,8 @@ This is a function that prints a file name containing a specific year
 number.(using the \code{year} argument).
 }
 \examples{
-make_filename(2017)
 
+WD <- setwd(system.file("extdata", package = "mypack"))
+make_filename(2013)
+setwd(WD)
 }
