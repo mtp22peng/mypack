@@ -116,8 +116,9 @@ fars_summarize_years <- function(years) {
 #' states on a map.
 #'
 #' @examples
-#' fars_map_state(25, 2015)
-#'
+#' WD <- setwd(system.file("extdata", package = "mypack"))
+#' fars_map_state(12, 2015)
+#' setwd(WD)
 #' @export
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
