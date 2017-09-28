@@ -18,5 +18,5 @@ To get started, read the introduction vignette: vignette('introduction', package
 
 Travis Badge
 
+https://travis-ci.org/mtp22peng/mypack
 
-https://api.travis-ci.org/mtp22peng/mypack.svg?branch=master
