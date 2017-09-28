@@ -1,14 +1,14 @@
 # mypack
 
-farsdata Package - A Coursera Project
+mypack Package - Building R Project
 
-This R package is submitted as the Week 4 final assignment for the "Building R Packages" course on Coursera, as part of the Johns Hopkins University "Mastering Software Development in R" specialization.
+This R package is submitted as the homework project for the coursera course: mastering Software Development in R specialization.
 
-Date: Dec 3, 2016
+Date: Sept 28, 2017
 
 Installation
 
-To install this package to run on your system, please first install and load the devtools package. Then you may install and load this package thus:
+Using the devtools package:
 
 install_github('mtp22peng/mypack')
 library(mypack)
@@ -18,4 +18,4 @@ To get started, read the introduction vignette: vignette('introduction', package
 
 Travis Badge
 
-Travis-CI Build Status
+https://travis-ci.org/mtp22peng/mypack.svg?branch=master
